@@ -14,8 +14,8 @@ def portfolio_view(request):
         'github': 'https://github.com/Mijan-0707',
         'email': 'mijan0707@example.com',
         'years_experience': '3+',
-        'apps_shipped': '10+ Production Apps',
-        'store_rating': '4.9★',
+        'apps_shipped': '2',
+        'focus_framework': 'Flutter & Dart',
     }
 
     skills = [
