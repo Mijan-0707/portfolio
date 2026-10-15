@@ -1,6 +1,6 @@
 # Mijanur Rahman — Developer Portfolio
 
-A modern, minimalist portfolio web application built with **Laravel 12** and **Tailwind CSS**, tailored for a **Mobile & Flutter Application Engineer**.
+A modern, minimalist developer portfolio web application built with **Django 6** and **Tailwind CSS**, tailored for a **Mobile & Flutter Application Engineer**.
 
 Live Repository: [https://github.com/Mijan-0707/portfolio](https://github.com/Mijan-0707/portfolio)
 
@@ -11,17 +11,16 @@ Live Repository: [https://github.com/Mijan-0707/portfolio](https://github.com/Mi
 - **Minimalist & Clean Dark Aesthetics**: Responsive layout styled with Tailwind CSS, typography using *Instrument Sans* & *JetBrains Mono*.
 - **Focused Tech Stack**: Deep highlights on Flutter, Dart, Android SDK, iOS interop, reactive state management (Bloc, Riverpod, Provider), Clean Architecture, and backend services.
 - **Projects Showcase**: Highlights 6 flagship mobile applications with key performance metrics, architecture stack, and GitHub links.
-- **Interactive Contact Form**: Backed by Laravel Form Request validation (`ContactRequest`), model persistence (`ContactMessage`), and flash feedback.
-- **Quality & Automated Tests**: Comprehensive feature tests (`tests/Feature/PortfolioTest.php`) verifying page render, form submission, and validation.
+- **Interactive Contact Form**: Backed by Django ModelForm validation (`ContactForm`), model persistence (`ContactMessage`), and message framework feedback.
+- **Django Admin**: Easily view and manage contact submissions at `/admin/`.
+- **Automated Tests**: Unit and integration test suite (`core/tests.py`) verifying page render, form submission, and validation.
 
 ---
 
 ## 🚀 Getting Started
 
 ### Requirements
-- **PHP 8.2+** (PHP 8.5 tested)
-- **Composer 2.x**
-- **Node.js 18+** & **npm**
+- **Python 3.10+** (Python 3.14 tested)
 
 ### Installation
 
@@ -31,31 +30,30 @@ Live Repository: [https://github.com/Mijan-0707/portfolio](https://github.com/Mi
    cd portfolio
    ```
 
-2. **Install dependencies:**
+2. **Create and activate a virtual environment:**
    ```bash
-   composer install
-   npm install
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
-3. **Configure Environment:**
+3. **Install dependencies:**
    ```bash
-   cp .env.example .env
-   php artisan key:generate
+   pip install -r requirements.txt
    ```
 
 4. **Run Migrations:**
    ```bash
-   php artisan migrate
+   python manage.py migrate
    ```
 
-5. **Build Frontend Assets:**
+5. **(Optional) Create Superuser for Admin:**
    ```bash
-   npm run build
+   python manage.py createsuperuser
    ```
 
 6. **Start the Development Server:**
    ```bash
-   php artisan serve
+   python manage.py runserver
    ```
    Open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser.
 
@@ -64,10 +62,5 @@ Live Repository: [https://github.com/Mijan-0707/portfolio](https://github.com/Mi
 ## 🧪 Running Tests
 
 ```bash
-php artisan test
-```
-
-Code formatting with Laravel Pint:
-```bash
-vendor/bin/pint --format agent
+python manage.py test
 ```
