@@ -8,8 +8,9 @@ class PortfolioTests(TestCase):
         response = self.client.get(reverse('home'))
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, 'Mijanur Rahman')
-        self.assertContains(response, 'Mobile &amp; Flutter Application Engineer')
-        self.assertContains(response, 'PulseFlow - Fitness &amp; Habit Tracker')
+        self.assertContains(response, 'Flutter &amp; Mobile Application Engineer')
+        self.assertContains(response, 'GCPay')
+        self.assertContains(response, 'R-Link Studio')
         self.assertTemplateUsed(response, 'portfolio.html')
 
     def test_contact_form_submission_success(self):
