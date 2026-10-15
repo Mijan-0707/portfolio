@@ -2,6 +2,7 @@
 
 A modern, minimalist developer portfolio web application built with **Django 6** and **Tailwind CSS**, tailored for a **Mobile & Flutter Application Engineer**.
 
+Live Website: **[https://mijan-0707.github.io/portfolio/](https://mijan-0707.github.io/portfolio/)**  
 Live Repository: [https://github.com/Mijan-0707/portfolio](https://github.com/Mijan-0707/portfolio)
 
 ---
