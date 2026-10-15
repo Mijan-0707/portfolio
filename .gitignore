@@ -13,6 +13,3 @@ staticfiles/
 .idea/
 .vscode/
 *.swp
-
-# Archive
-flutter_archive/
