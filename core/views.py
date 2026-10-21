@@ -12,7 +12,7 @@ def portfolio_view(request):
         'location': 'Dhaka, Bangladesh',
         'status': 'Available for contract & full-time mobile roles',
         'github': 'https://github.com/Mijan-0707',
-        'email': 'mijan0707@example.com',
+        'email': 'khanmijan2998@gmail.com',
         'years_experience': '3+',
         'apps_shipped': '2',
         'focus_framework': 'Flutter & Dart',
